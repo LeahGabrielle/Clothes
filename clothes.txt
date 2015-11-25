@@ -1,0 +1,6 @@
+shirt1 top hot school
+shirt2 top cold school
+bottom1 bottoms hot home
+shirt3 top cold home
+bottom2 bottoms cold school
+bottom3 bottoms cold home
