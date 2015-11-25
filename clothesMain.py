@@ -1,18 +1,18 @@
 #Clothing vs weather - main 
 #fileName format is itemName top/bottoms hot/cold location
-import weatherClothes_files
-import weather
+import clothesFile
+import sortByWeather
 import mood
 
 
 def main():
-    clothesList = weatherClothes_files.openFile()
+    clothesList = clothesFile.openFile()
     valid = False
     while (valid != True) :
-        searchType = input("Select search (1 or 2)\n1. by weather\n2. by mood\n")
+        searchType = input("How would you like to search?\n1.By Weather\n2.By Mood\n...\n")
         if searchType=='1':
             valid = True
-            finalChoice = weather.requestWeather(clothesList)
+            finalChoice = sortByWeather.requestWeather(clothesList)
             print("Your outfit is", finalChoice[0][0], "and", finalChoice[1][0])
         elif searchType =='2':
             valid = True
