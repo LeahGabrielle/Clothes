@@ -15,6 +15,7 @@ def sortWeather(clothesList, weather):
     for i in range(0,len(clothesList)):
         for j in range(0, len(clothesList[i]):
             '''
+    #change to switch later
     #go through tops
     i=0
     for top in clothesList[0]:

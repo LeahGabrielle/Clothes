@@ -1,6 +1,6 @@
 #All file functions
 
-#open file
+#request and read a file with all information about the clothes
 def openFile():
     fileName = input('Enter file name of all clothes\n')
     file = open(fileName,'r') 
@@ -10,7 +10,7 @@ def openFile():
 
 #creates a list of all clothes from file and sorts it into [ [tops] [bottoms] ]
 def readFile(file):
-    clothes = [ [], []]
+    clothes = [[], []]
     #tops = [ [top name, type, weather, location] ]
     for line in file:
         #section out files
